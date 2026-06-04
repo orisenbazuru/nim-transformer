@@ -24,15 +24,15 @@ https://orisenbazuru.github.io/nim-transformer/
 - [`docs/index.html`](docs/index.html): static browser app for GitHub Pages.
 - [`docs/model_weights.json`](docs/model_weights.json): exported model weights used by the browser app.
 - [`docs/.nojekyll`](docs/.nojekyll): tells GitHub Pages to serve the static files directly.
-- [`01_train_xor_sum_predictor_clean.ipynb`](01_train_xor_sum_predictor_clean.ipynb): trains the balance / Nim-sum predictor.
-- [`02_train_nim_transformer_pipeline_clean.ipynb`](02_train_nim_transformer_pipeline_clean.ipynb): trains and evaluates the attention-based Nim move model.
+- [`01_train_xor_sum_predictor.ipynb`](01_train_xor_sum_predictor.ipynb): trains the balance / Nim-sum predictor.
+- [`02_train_nim_transformer_pipeline.ipynb`](02_train_nim_transformer_pipeline.ipynb): trains and evaluates the attention-based Nim move model.
 - [`prepare_github_pages.py`](prepare_github_pages.py): exports trained PyTorch weights into the browser-readable JSON format.
 
 ## Notebook 1: Balance / Nim-Sum Predictor
 
 Notebook:
 
-[`01_train_xor_sum_predictor_clean.ipynb`](01_train_xor_sum_predictor_clean.ipynb)
+[`01_train_xor_sum_predictor.ipynb`](01_train_xor_sum_predictor.ipynb)
 
 Purpose:
 
@@ -58,7 +58,7 @@ The notebook is configurable for:
 
 Notebook:
 
-[`02_train_nim_transformer_pipeline_clean.ipynb`](02_train_nim_transformer_pipeline_clean.ipynb)
+[`02_train_nim_transformer_pipeline.ipynb`](02_train_nim_transformer_pipeline.ipynb)
 
 Purpose:
 
@@ -119,8 +119,8 @@ jupyter lab
 Then open:
 
 ```text
-01_train_xor_sum_predictor_clean.ipynb
-02_train_nim_transformer_pipeline_clean.ipynb
+01_train_xor_sum_predictor.ipynb
+02_train_nim_transformer_pipeline.ipynb
 ```
 
 ### Option B: environment.yml
@@ -137,8 +137,8 @@ jupyter lab
 
 Run the notebooks in this order:
 
-1. `01_train_xor_sum_predictor_clean.ipynb`
-2. `02_train_nim_transformer_pipeline_clean.ipynb`
+1. `01_train_xor_sum_predictor.ipynb`
+2. `02_train_nim_transformer_pipeline.ipynb`
 
 After training, export the move model for the static app:
 
